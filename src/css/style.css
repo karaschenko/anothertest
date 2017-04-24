@@ -1,0 +1,169 @@
+body {
+  background: url("../img/molot.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 700px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+.wrapper .page__title {
+  text-align: center;
+  color: #277b65;
+  font-weight: 800;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.wrapper .page__subtitle {
+  text-align: center;
+  margin: 30px 0 70px;
+}
+.wrapper .table-row {
+  font-size: 0;
+  position: relative;
+  margin-bottom: 2px;
+}
+.wrapper .table-row:nth-child(1) .table-row-col:not(:first-child)::before {
+  content: "Государственный суд";
+  position: absolute;
+  color: #277b65;
+  top: -35px;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+.wrapper .table-row:nth-child(1) .table-row-col:nth-child(3)::before {
+  content: "Арбитражный суд";
+}
+.wrapper .table-row:first-child .table-row-col:last-child {
+  border-top-right-radius: 35px;
+}
+.wrapper .table-row:last-child .table-row-col:last-child {
+  border-bottom-right-radius: 35px;
+}
+.wrapper .table-row-col {
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background: #5da6a6;
+  box-shadow: 0 0 20px #5da6a6;
+  padding: 25px;
+}
+.wrapper .table-row-col:not(:last-child) {
+  margin-right: 2px;
+}
+.wrapper .table-row-col li {
+  height: 60px;
+  line-height: 20px;
+}
+.wrapper .table-row-col li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+.wrapper .table-row-col p {
+  height: 60px;
+  line-height: 20px;
+}
+.wrapper .table-row-col:first-child {
+  width: calc(23% - 2px);
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+  padding: 0 20px;
+  text-align: center;
+}
+.wrapper .table-row-col:first-child span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.2em;
+  height: 28px;
+  overflow: hidden;
+}
+.wrapper .table-row-col:nth-child(2) {
+  width: calc(42% - 2px);
+  height: 100%;
+}
+.wrapper .table-row-col:last-child {
+  width: 35%;
+}
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 970px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+  .wrapper .table-row {
+    font-size: 0;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .wrapper .table-row:nth-child(1) .table-row-col:not(:first-child)::before {
+    display: none;
+  }
+  .wrapper .table-row:first-child .table-row-col:last-child {
+    border-top-right-radius: 0;
+  }
+  .wrapper .table-row:last-child .table-row-col:last-child {
+    border-bottom-right-radius: 0;
+  }
+  .wrapper .table-row-col {
+    font-size: 12px;
+    position: relative;
+    display: block;
+  }
+  .wrapper .table-row-col:not(:last-child) {
+    margin-right: 0px;
+  }
+  .wrapper .table-row-col:not(:first-child)::after {
+    content: 'Государственный суд';
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    font-style: italic;
+    width: 100%;
+  }
+  .wrapper .table-row-col:nth-child(3)::after {
+    content: 'Арбитражный суд';
+  }
+  .wrapper .table-row-col li {
+    height: 60px;
+    line-height: 20px;
+  }
+  .wrapper .table-row-col li:before {
+    content: "-";
+    position: relative;
+    left: -5px;
+  }
+  .wrapper .table-row-col p {
+    height: 60px;
+    line-height: 20px;
+  }
+  .wrapper .table-row-col:first-child {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .wrapper .table-row-col:nth-child(2) {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .table-row-col:last-child {
+    width: 100%;
+  }
+}
